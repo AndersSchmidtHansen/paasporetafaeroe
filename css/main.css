@@ -122,7 +122,7 @@ textarea {
     }
 
     nav {
-        margin-bottom: 3rem;
+        padding: 2rem 0;
     }
 
 
@@ -184,7 +184,11 @@ textarea {
         }
         .story-section aside {
             width: 50%;
-        }        
+        }
+
+        nav {
+            padding: 2rem 3rem;
+        }              
     }
 
     @media screen and (max-width: 768px) {
