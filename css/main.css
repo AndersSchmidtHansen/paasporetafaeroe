@@ -139,9 +139,13 @@ textarea {
         opacity: .80;
     }
 
-    main {
+    .wrapped {
         max-width: 102.4rem;
         margin: 0 auto;
+    }
+
+    .wrapped--tightly {
+        max-width: 72rem;
     }
 
     .story-section {
@@ -175,12 +179,22 @@ textarea {
 
     @media screen and (max-width: 1024px) {
         .story-section iframe {
+            width: 49.9%;
+            height: 32rem;
+        }
+        .story-section aside {
+            width: 50%;
+        }        
+    }
+
+    @media screen and (max-width: 768px) {
+        .story-section iframe {
             width: 39.9%;
         }
         .story-section aside {
             width: 60%;
         }        
-    }
+    }    
 
     @media screen and (max-width: 660px) {
         .story-section iframe,
