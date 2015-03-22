@@ -173,12 +173,12 @@ textarea {
     }
 
 
-    @media screen and (max-width: 830px) {
+    @media screen and (max-width: 1024px) {
         .story-section iframe {
-            width: 30%;
+            width: 40%;
         }
         .story-section aside {
-            width: 70%;
+            width: 60%;
         }        
     }
 
