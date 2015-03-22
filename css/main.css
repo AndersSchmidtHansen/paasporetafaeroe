@@ -11,9 +11,10 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+    color: #444;
+    font-size: 62.5%;
+    line-height: 1.618;
+    box-sizing: border-box;
 }
 
 /*
@@ -94,12 +95,105 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+    
+    *,*:before,*:after { box-sizing: inherit; position: relative; }
+
+    a {
+        padding-bottom: .2rem;
+        border-bottom: 1px dotted;
+        text-decoration: none;
+        color: #3498db;
+        transition: opacity .28s ease-in-out;
+    }
+
+    a:hover { opacity: .5; }
+
+    body {
+        font-size: 1.618rem;
+        font-family: "Roboto Slab", sans-serif;
+        font-weight: 300;
+        background-color: ghostwhite;
+    }
+
+    header {
+        width: 75%;
+        max-width: 70rem; 
+        margin: 5rem auto 10rem auto;
+    }
+
+    nav {
+        margin-bottom: 3rem;
+    }
 
 
+    .logo {
+        display: inline-block;
+        width: 15rem;
+        height: 15rem;
+        border: 4px dotted;
+        border-radius: 50%;
+        background-image: url('../img/anchor.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 70%;
+        opacity: .80;
+    }
+
+    main {
+        max-width: 93.5rem;
+        margin: 0 auto;
+    }
+
+    .story-section {
+
+    }
+
+    .story-section + .story-section {
+
+    }
+
+    .story-section iframe,
+    .story-section aside {
+        float: left;
+        width: 50%;
+    }
+
+    .story-section iframe {
+        height: 23rem;
+    }
+
+    .story-section aside {
+        padding: 0rem 3rem;
+    }
+
+    .story-section:nth-child(even) {
+        color: #ecf0f1;
+        background-color: #3498db;
+        font-weight: 400;
+    }
 
 
+    @media screen and (max-width: 830px) {
+        .story-section iframe {
+            width: 30%;
+        }
+        .story-section aside {
+            width: 70%;
+        }        
+    }
 
+    @media screen and (max-width: 660px) {
+        .story-section iframe,
+        .story-section aside {
+            float: none;
+            width: 100%;
+        }       
 
+        .story-section aside {
+            padding: 0 3rem;
+            padding-bottom: 1rem;
+        }
+    }  
 
 
 
@@ -121,6 +215,14 @@ textarea {
 
 .hidden {
     display: none !important;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--right {
+    text-align: right;
 }
 
 /*
